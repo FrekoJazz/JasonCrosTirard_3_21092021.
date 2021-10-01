@@ -34,4 +34,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.header {
+  padding: 2rem;
+}
+.header__logo {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
 /*# sourceMappingURL=style.css.map */
