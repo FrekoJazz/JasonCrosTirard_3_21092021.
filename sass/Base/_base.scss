@@ -35,3 +35,23 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: Roboto;
+    src: url(/assets/font/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: Shirkhand;
+    src: url(/assets/font/Shrikhand/Shrikhand-Regular.ttf);
+}
+
+h1, h2, h3 {
+    font-family: Shirkhand;
+}
+
+p {
+    font-family: Roboto;
+}
+
+main {
+    gap: 1em;
+}
