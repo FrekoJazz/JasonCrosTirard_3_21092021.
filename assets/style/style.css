@@ -104,4 +104,19 @@ button {
   text-align: center;
 }
 
+.list-fonction__ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+.list-fonction__li {
+  display: inline;
+  width: 100%;
+  height: auto;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 3px;
+  background-color: #9356DC;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=style.css.map */
