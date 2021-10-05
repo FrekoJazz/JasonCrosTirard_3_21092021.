@@ -27,8 +27,10 @@
 <body>
     <main>
 
-        <header class="header">
-            <img src="/assets/images/logo/ohmyfood.png" alt="logo du site" class="header__logo">
+        <header>
+            <div class="header">
+                <img src="/assets/images/logo/ohmyfood.png" alt="logo du site" class="header__logo">
+            </div>
         </header>
         <section>
             <div class="location">
@@ -56,46 +58,51 @@
                 </ol>
             </div>
         </section>
-        <section class="flex">
+        <section class="restaurants">
             <h2>Restaurants</h2>
-            <article class="big-card">
-                <a href="#">
-                    <img src="/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                        alt="dos de colin, jeune pousse de salade et émincé de saumon" class="big-card__img">
-                    <div class="big-card__news">Nouveau</div>
-                    <h3 class="big-card__title">La palette du goût</h3>
-                    <p class="big-card__text">Ménilmontant</p>
-                    <i class="far fa-heart _heart big-card__icon"><span class="sr-only">icone coeur</span></i>
-                </a>
-            </article>
-            <article class="big-card">
-                <a href="#">
-                    <img src="/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="calamar"
-                        class="big-card__img">
-                    <div class="big-card__news">Nouveau</div>
-                    <h3>La note enchantée</h3>
-                    <p class="big-card__text">Charonne</p>
-                    <i class="fas fa-heart _heart big-card__icon"><span class="sr-only">icone coeur</span></i>
-                </a>
-            </article>
-            <article class="big-card">
-                <a href="#">
-                    <img src="/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                        alt="bruschetta, épinards et mozzarella burrata" class="big-card__img">
-                    <h3 class="big-card__title">À la française</h3>
-                    <p class="big-card__text">Cité Rouge</p>
-                    <i class="far fa-heart _heart big-card__icon"><span class="sr-only">icone coeur</span></i>
-                </a>
-            </article>
-            <article class="big-card">
-                <a href="#">
-                    <img src="/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                        alt="filet de merlu en sauce epicée et ses cébettes" class="big-card__img">
-                    <h3 class="big-card__title">Le délice des sens</h3>
-                    <p class="big-card__text">Folie-Méricourt</p>
-                    <i class="far fa-heart _heart big-card__icon"><span class="sr-only">icone coeur</span></i>
-                </a>
-            </article>
+            <div class="cards">
+                <article>
+                    <a href="#" class="big-card">
+                        <img src="/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                            alt="dos de colin, jeune pousse de salade et émincé de saumon" class="big-card__img">
+                        <span class="big-card__news">Nouveau</span>
+                        <div class="big-card-text">
+                            <h3 class="big-card-text__title">La palette du goût</h3>
+                            <p class="big-card-text__text">Ménilmontant</p>
+                            <i class="far fa-heart _heart big-card-text__icon"><span class="sr-only">icone
+                                    coeur</span></i>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#" class="big-card">
+                        <img src="/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="calamar"
+                            class="big-card__img img-enchantee">
+                        <span class="big-card__news news">Nouveau</span>
+                        <h3>La note enchantée</h3>
+                        <p class="big-card__text">Charonne</p>
+                        <i class="fas fa-heart _heart big-card__icon"><span class="sr-only">icone coeur</span></i>
+                    </a>
+                </article>
+                <article>
+                    <a href="#" class="big-card">
+                        <img src="/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                            alt="bruschetta, épinards et mozzarella burrata" class="big-card__img">
+                        <h3 class="big-card__title">À la française</h3>
+                        <p class="big-card__text">Cité Rouge</p>
+                        <i class="far fa-heart _heart big-card__icon"><span class="sr-only">icone coeur</span></i>
+                    </a>
+                </article>
+                <article>
+                    <a href="#" class="big-card">
+                        <img src="/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                            alt="filet de merlu en sauce epicée et ses cébettes" class="big-card__img">
+                        <h3 class="big-card__title">Le délice des sens</h3>
+                        <p class="big-card__text">Folie-Méricourt</p>
+                        <i class="far fa-heart _heart big-card__icon"><span class="sr-only">icone coeur</span></i>
+                    </a>
+                </article>
+            </div>
         </section>
         <footer class="footer">
             <h3>ohmyfood</h3>

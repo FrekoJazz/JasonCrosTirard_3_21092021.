@@ -1,4 +1,3 @@
-@import url(/sass/utils/_variable.scss);
 @font-face {
   font-family: "Roboto-medium";
   src: url(assets\f ontRobotoRoboto-Medium.ttf);
@@ -54,7 +53,7 @@ main {
 button {
   border: 1px solid transparent;
   color: white;
-  background: linear-gradient(secondary, primary);
+  background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 30px;
   padding: 10px 20px;
   display: inline-block;
@@ -117,6 +116,60 @@ button {
   padding: 3px;
   background-color: #9356DC;
   color: #ffffff;
+}
+
+.restaurants {
+  background-color: rgba(211, 211, 211, 0.2);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  margin: 1.5rem;
+  gap: 1rem;
+}
+
+.big-card {
+  width: 100%;
+  height: auto;
+  border: 1px solid #fff;
+  border-radius: 1rem 1rem 0 0;
+  background-color: #fff;
+  position: relative;
+}
+.big-card__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.big-card__news {
+  position: absolute;
+  left: 12rem;
+  bottom: 14rem;
+  background-color: #99E2D0;
+  border: 1px solid transparent;
+  border-radius: 0.1rem;
+}
+
+.img-enchantee {
+  aspect-ratio: 12/8;
+}
+
+.news {
+  bottom: 13rem;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  border: 1px solid #fff;
+  background-color: black;
+}
+
+.footerblock {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

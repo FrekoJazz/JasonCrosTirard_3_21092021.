@@ -1,16 +1,15 @@
+@import "./utils/variable";
+@import "./utils/mixin";
+
 @import "./Base/base";
 
 @import "./composants/btn";
 @import "./composants/heart";
 
-@import "./layout/big-card";
-@import "./layout/flex";
-@import "./layout/footer";
 @import "./layout/header";
 @import "./layout/location";
 @import "./layout/reservation";
 @import "./layout/list-fonction";
+@import "./layout/restaurants";
+@import "./layout/footer";
 @import "./layout/small-card";
-
-@import "./utils/mixin";
-@import "./utils/variable";
