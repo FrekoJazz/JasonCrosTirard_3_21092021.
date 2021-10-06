@@ -121,6 +121,16 @@ button {
   background-color: rgba(211, 211, 211, 0.2);
 }
 
+.cards-box {
+  width: 100%;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 20px;
+  background: white;
+  justify-self: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 .cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -132,7 +142,7 @@ button {
 .big-card {
   width: 100%;
   height: auto;
-  border: 1px solid #fff;
+  border: 1px solid transparent;
   border-radius: 1rem 1rem 0 0;
   background-color: #fff;
   position: relative;
@@ -142,6 +152,7 @@ button {
   height: auto;
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
+  aspect-ratio: 6/3;
 }
 .big-card__news {
   position: absolute;
@@ -152,12 +163,22 @@ button {
   border-radius: 0.1rem;
 }
 
-.img-enchantee {
-  aspect-ratio: 12/8;
-}
-
 .news {
   bottom: 13rem;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem 0 1rem;
+}
+.card-text__text {
+  line-height: 1.5em;
+}
+.card-text__icon {
+  font-size: 2em;
 }
 
 .footer {
