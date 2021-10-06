@@ -19,4 +19,28 @@ $breakpoints: (
     }
   }
 
+
   //https://www.sitepoint.com/managing-responsive-breakpoints-sass/ //
+
+  $darkgrey: rgba(80, 80, 80, 0.1);
+  $light-grey: rgba(211, 211, 211, 0.2);
+  $primary: #9356DC;
+  $secondary: #FF79DA;
+  $tertiary: #99E2D0;
+  $white: #fff;
+
+  @mixin background($colour: $light-grey) {
+    background-color: $colour;
+  }
+
+  @mixin border {
+    border: 1px solid transparent;
+  }
+
+  @mixin box-shadow {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  @mixin colour-darken($colour:$tertiary) {
+    color: darken($colour,40%);
+  }
