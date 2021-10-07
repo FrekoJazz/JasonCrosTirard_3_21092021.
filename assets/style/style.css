@@ -102,19 +102,43 @@ button {
   text-align: center;
 }
 
-.list-fonction__ol {
-  list-style-type: decimal;
-  list-style-position: inside;
+.list-fonction {
+  position: relative;
 }
 .list-fonction__li {
-  display: inline;
-  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.list-fonction__number {
+  width: auto;
   height: auto;
   border: 1px solid;
   border-radius: 20px;
-  padding: 3px;
+  padding: 5px 8px;
   background-color: #9356DC;
   color: #fff;
+  position: absolute;
+  left: 10px;
+}
+.list-fonction__text {
+  /* display: flex; */
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  border: 1px solid transparent;
+  background-color: rgba(211, 211, 211, 0.2);
+  border-radius: 25px;
+  padding: 25px 25px;
+  margin: 0 1rem;
+  gap: 1rem;
+}
+
+.grid-fonction {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  margin: 1.5rem 0;
+  gap: 1rem;
 }
 
 .restaurants {
