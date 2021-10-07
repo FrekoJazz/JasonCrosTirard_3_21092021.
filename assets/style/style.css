@@ -141,6 +141,10 @@ button {
   gap: 1rem;
 }
 
+.icon-list {
+  margin: 0 0.5rem;
+}
+
 .restaurants {
   background-color: rgba(211, 211, 211, 0.2);
 }
@@ -207,7 +211,7 @@ button {
   width: 100%;
   height: auto;
   border: 1px solid transparent;
-  padding: 1rem;
+  padding: 1rem 2rem;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
