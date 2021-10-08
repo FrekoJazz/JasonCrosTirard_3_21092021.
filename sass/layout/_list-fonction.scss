@@ -1,3 +1,6 @@
+.list {
+    padding: 3rem 0;
+}
 .list-fonction {
     position: relative;
     &__li {
@@ -16,7 +19,6 @@
         left: 10px;   
     }
     &__text {
-    /* display: flex; */
     width: 100%;
     height: auto;
     display: inline-block;
