@@ -1,9 +1,14 @@
 .header {
-padding: 2rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include box-shadow;
 &__logo {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     display: block;
     margin: auto;
+
 }
 }

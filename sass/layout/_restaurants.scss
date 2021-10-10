@@ -1,6 +1,6 @@
 .restaurants {
     @include background;
-    padding: 3rem 0;
+    padding: 3rem 1.5rem;
 }
 
 .cards-box{
@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
-    margin: 1.5rem;
+    margin: 1.5rem 0;
     gap: 1rem;
     
 }

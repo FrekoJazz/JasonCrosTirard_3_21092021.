@@ -23,7 +23,7 @@ $breakpoints: (
   //https://www.sitepoint.com/managing-responsive-breakpoints-sass/ //
 
   $darkgrey: rgba(80, 80, 80, 0.1);
-  $light-grey: rgba(211, 211, 211, 0.2);
+  $light-grey: rgba(239, 239, 239, 1);
   $primary: #9356DC;
   $secondary: #FF79DA;
   $tertiary: #99E2D0;
@@ -44,3 +44,10 @@ $breakpoints: (
   @mixin colour-darken($colour:$tertiary) {
     color: darken($colour,40%);
   }
+
+@mixin background-secondary($colour: $light-grey) {
+  @if ( lightness($colour) == 94% ) {                             
+    $colour: lighten($colour, 3%);
+}
+}
+ 
