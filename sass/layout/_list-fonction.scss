@@ -1,5 +1,8 @@
 .list {
     padding: 3rem 0;
+    @include large-only {
+    padding: 2rem 0 0;
+    }
     @include background-secondary($light-grey);
     &__title {
         margin-left: 1.5rem;
@@ -9,19 +12,31 @@
     position: relative;
     &__li {
         display: flex;
-        align-items: center;
-        
+        align-items: center; 
     }
-    &__number {
-        width: auto;
-        height: auto;
-        @include border;
-        border-radius: 20px;
-        padding: 5px 8px;
-        background-color: #9356DC;
-        color: #fff;
-        position: absolute;
-        left: 22px;  
+    &__number1 {
+        @include list-fonction__number;
+        left: 22px;
+    }
+    &__number2 {
+        @include list-fonction__number;
+        left: 22px;
+        @include large-only {
+            left: 366px;
+        @include huge-only {
+            left: 504px;
+            }
+        }
+    }
+    &__number3 {
+        @include list-fonction__number;
+        left: 22px;
+        @include large-only {
+            left: 713px;
+        @include huge-only {
+            left: 990px;
+            }
+        }
     }
     &__text {
         width: 100%;
@@ -42,10 +57,13 @@
     grid-template-rows: repeat(3, 1fr);
     margin: 1.5rem 0;
     gap: 1rem;
+    @include large-only {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        margin: 1.5rem 0 0;
+    }
 }
 
 .icon-list {
     margin: 0 1rem;
 }
-
-

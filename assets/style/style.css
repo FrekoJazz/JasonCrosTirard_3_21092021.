@@ -44,6 +44,8 @@ html {
 }
 body {
   font-family: Roboto;
+  max-width: 1440px;
+  margin: auto;
 }
 
 main {
@@ -129,6 +131,11 @@ button:hover {
   padding: 2rem 1.2rem;
   gap: 1rem;
 }
+@media screen and (min-width: 1024px) {
+  .reservation {
+    gap: 2rem;
+  }
+}
 .reservation__title {
   text-align: center;
 }
@@ -138,6 +145,11 @@ button:hover {
 
 .list {
   padding: 3rem 0;
+}
+@media screen and (min-width: 1024px) {
+  .list {
+    padding: 2rem 0 0;
+  }
 }
 .list__title {
   margin-left: 1.5rem;
@@ -150,7 +162,7 @@ button:hover {
   display: flex;
   align-items: center;
 }
-.list-fonction__number {
+.list-fonction__number1 {
   width: auto;
   height: auto;
   border: 1px solid transparent;
@@ -160,6 +172,48 @@ button:hover {
   color: #fff;
   position: absolute;
   left: 22px;
+}
+.list-fonction__number2 {
+  width: auto;
+  height: auto;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 5px 8px;
+  background-color: #9356DC;
+  color: #fff;
+  position: absolute;
+  left: 22px;
+}
+@media screen and (min-width: 1024px) {
+  .list-fonction__number2 {
+    left: 366px;
+  }
+}
+@media screen and (min-width: 1024px) and (min-width: 1440px) {
+  .list-fonction__number2 {
+    left: 504px;
+  }
+}
+.list-fonction__number3 {
+  width: auto;
+  height: auto;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 5px 8px;
+  background-color: #9356DC;
+  color: #fff;
+  position: absolute;
+  left: 22px;
+}
+@media screen and (min-width: 1024px) {
+  .list-fonction__number3 {
+    left: 713px;
+  }
+}
+@media screen and (min-width: 1024px) and (min-width: 1440px) {
+  .list-fonction__number3 {
+    left: 990px;
+  }
 }
 .list-fonction__text {
   width: 100%;
@@ -181,6 +235,13 @@ button:hover {
   margin: 1.5rem 0;
   gap: 1rem;
 }
+@media screen and (min-width: 1024px) {
+  .grid-fonction {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    margin: 1.5rem 0 0;
+  }
+}
 
 .icon-list {
   margin: 0 1rem;
@@ -189,6 +250,11 @@ button:hover {
 .restaurants {
   background-color: #efefef;
   padding: 3rem 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants {
+    padding: 2rem 1.5rem;
+  }
 }
 
 .cards-box {
@@ -207,6 +273,13 @@ button:hover {
   grid-template-rows: repeat(4, 1fr);
   margin: 1.5rem 0;
   gap: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+  }
 }
 
 .big-card {

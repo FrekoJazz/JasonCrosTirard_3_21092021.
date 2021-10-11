@@ -1,26 +1,22 @@
 //Responsive breakpoint
 $breakpoints: (
-  'small': (min-width: 425px),
-  'medium': (min-width: 768px),
-  'large': (min-width: 1024px),
-  'huge': (min-width: 1440px)
+  small: 425px,
+  medium: 768px,
+  large: 1024px,
+  huge: 1440px
 );
-
-@mixin respond-to($name) {
-    @if map-has-key($breakpoints, $name) {
-      @media #{inspect(map-get($breakpoints, $name))} {
-        @content;
-      }
-    }
-  
-    @else {
-      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-          + "Please make sure it is defined in `$breakpoints` map.";
-    }
+@mixin large-only {
+  @media screen and (min-width:map-get($breakpoints, large)) {
+    @content;
   }
+}
 
+@mixin huge-only {
+  @media screen and (min-width:map-get($breakpoints, huge)) {
+    @content;
+  }
+}
 
-  //https://www.sitepoint.com/managing-responsive-breakpoints-sass/ //
 
   $darkgrey: rgba(80, 80, 80, 0.1);
   $light-grey: rgba(239, 239, 239, 1);
@@ -41,6 +37,17 @@ $breakpoints: (
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   }
 
+  @mixin list-fonction__number {
+    width: auto;
+    height: auto;
+    @include border;
+    border-radius: 20px;
+    padding: 5px 8px;
+    background-color: #9356DC;
+    color: #fff;
+    position: absolute;
+  }
+
   @mixin colour-darken($colour:$tertiary) {
     color: darken($colour,40%);
   }
@@ -50,4 +57,3 @@ $breakpoints: (
     $colour: lighten($colour, 3%);
 }
 }
- 
