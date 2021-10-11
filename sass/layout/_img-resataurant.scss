@@ -8,5 +8,25 @@
         object-fit: cover;
         object-position: top;
         aspect-ratio: 4/3;
+        @include medium-only {
+            height: 36rem;
+            object-fit: cover;
+            object-position: unset;
+            aspect-ratio: 0;
+        }
+        @include large-only {
+            height: 35rem;
+            object-position: 0rem -6rem;
+            @include huge-only {
+                height: 35rem;
+                object-position: 0rem -22rem;
+            }
+        }
+    }
+    @include medium-only {
+        height: 35rem;
+    }
+    @include large-only {
+        height: 35rem;
     }
 }
