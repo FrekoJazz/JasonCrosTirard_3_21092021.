@@ -1,42 +1,29 @@
 .list {
     padding: 3rem 0;
     @include large-only {
-    padding: 2rem 0 0;
+    padding: 2rem 0 3rem;
     }
-    @include background-secondary($light-grey);
+    @include background-secondary;
     &__title {
         margin-left: 1.5rem;
     }
 }
 .list-fonction {
-    position: relative;
     &__li {
         display: flex;
         align-items: center; 
     }
     &__number1 {
         @include list-fonction__number;
-        left: 22px;
+        right: 1rem;
     }
     &__number2 {
         @include list-fonction__number;
-        left: 22px;
-        @include large-only {
-            left: 366px;
-        @include huge-only {
-            left: 504px;
-            }
-        }
+        right: 1rem;
     }
     &__number3 {
         @include list-fonction__number;
-        left: 22px;
-        @include large-only {
-            left: 713px;
-        @include huge-only {
-            left: 990px;
-            }
-        }
+        right: 1rem;
     }
     &__text {
         width: 100%;
@@ -45,7 +32,7 @@
         @include border;
         background-color: rgba(211, 211, 211, 0.2);
         border-radius: 25px;
-        padding: 25px 16px;
+        padding: 25px 0;
         margin: 0 2rem;
         gap: 1rem;
         @include box-shadow;
@@ -56,7 +43,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     margin: 1.5rem 0;
-    gap: 1rem;
+    gap: 2rem;
     @include large-only {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
@@ -65,5 +52,5 @@
 }
 
 .icon-list {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
 }

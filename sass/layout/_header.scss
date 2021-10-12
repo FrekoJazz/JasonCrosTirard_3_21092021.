@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @include box-shadow;
+    @include background-secondary;
 &__logo {
     max-width: 50%;
     height: auto;
