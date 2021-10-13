@@ -43,7 +43,7 @@
         aspect-ratio: 6/3;
     }
     &__news {
-        position: absolute;
+        position: relative;
         left: 12rem;
         bottom: 13rem;
         padding: 0.5rem 1rem;
@@ -52,6 +52,17 @@
         @include border;
         @include colour-darken;
     }
+}
+.news::after {
+    content: "Nouveau";
+    position: relative;
+    left: 12rem;
+    bottom: 13rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.1rem;
+    @include background($tertiary);
+    @include border;
+    @include colour-darken;
 }
 
 .card-text {

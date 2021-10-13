@@ -306,7 +306,19 @@ button:hover {
   aspect-ratio: 6/3;
 }
 .big-card__news {
-  position: absolute;
+  position: relative;
+  left: 12rem;
+  bottom: 13rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.1rem;
+  background-color: #99E2D0;
+  border: 1px solid transparent;
+  color: #278870;
+}
+
+.news::after {
+  content: "Nouveau";
+  position: relative;
   left: 12rem;
   bottom: 13rem;
   padding: 0.5rem 1rem;
