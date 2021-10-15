@@ -1,18 +1,26 @@
-
-button {
+.btn {
     border: 1px solid transparent;
     color: white;
     background: linear-gradient($secondary, $primary);
     border-radius: 30px;
-    padding: 10px 20px;
     display: inline-block;
     font: 500 0.9rem "Roboto";
     height: 50px;
-    @include box-shadow;
+    box-shadow: 3px 5px 12px rgb(0 0 0 / 13%);
 }
 
-button:hover {
-    cursor: pointer;
-    opacity: 1;
-    animation: flash 1.2s;
+.btn-reservation {
+    padding: 10px 20px;
 }
+
+.btn-commander {
+    padding: 10px 40px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    box-shadow: 3px 5px 12px rgb(0 0 0 / 40%);
+}
+
+//Aniimations a retravailler avec keyframe pour avoir un effet "smooth"
