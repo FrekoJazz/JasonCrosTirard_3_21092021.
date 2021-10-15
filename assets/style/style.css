@@ -63,10 +63,28 @@ main {
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 30px;
-  display: inline-block;
   font: 500 0.9rem "Roboto";
   height: 50px;
   box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.13);
+  position: relative;
+  z-index: 1;
+}
+.btn:hover::after {
+  opacity: 0.8;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(#ff88de, #9b63df);
+  box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms ease-in-out;
 }
 
 .btn-reservation {
@@ -75,12 +93,6 @@ main {
 
 .btn-commander {
   padding: 10px 40px;
-}
-
-.btn:hover {
-  cursor: pointer;
-  opacity: 0.9;
-  box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.4);
 }
 
 .heart {
