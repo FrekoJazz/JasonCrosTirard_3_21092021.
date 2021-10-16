@@ -205,33 +205,27 @@ main {
   margin-left: 1.5rem;
 }
 
-.list-fonction__li {
+.grid-fonction {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  margin: 1.5rem 0;
+  gap: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .grid-fonction {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    margin: 1.5rem 0 0;
+  }
+}
+
+.list-fonction {
   display: flex;
   align-items: center;
-}
-.list-fonction__number1 {
-  width: auto;
-  height: auto;
-  border: 1px solid transparent;
-  border-radius: 20px;
-  padding: 5px 8px;
-  background-color: #9356DC;
-  color: #fff;
   position: relative;
-  right: 1rem;
 }
-.list-fonction__number2 {
-  width: auto;
-  height: auto;
-  border: 1px solid transparent;
-  border-radius: 20px;
-  padding: 5px 8px;
-  background-color: #9356DC;
-  color: #fff;
-  position: relative;
-  right: 1rem;
-}
-.list-fonction__number3 {
+.list-fonction__number {
   width: auto;
   height: auto;
   border: 1px solid transparent;
@@ -253,25 +247,44 @@ main {
   margin: 0 2rem;
   gap: 1rem;
   box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.13);
+  z-index: 1;
 }
-
-.grid-fonction {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  margin: 1.5rem 0;
-  gap: 2rem;
+.list-fonction__text:hover::after {
+  opacity: 0.8;
 }
-@media screen and (min-width: 1024px) {
-  .grid-fonction {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    margin: 1.5rem 0 0;
-  }
+.list-fonction__text:hover + .list-fonction__text:hover__icon::before {
+  opacity: 1;
 }
-
-.icon-list {
+.list-fonction__text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 32px;
+  bottom: 0;
+  left: 32px;
+  background: #f2eafb;
+  border-radius: 25px;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms ease-in-out;
+}
+.list-fonction__icon {
+  position: relative;
   margin: 0 0.5rem;
+  z-index: 1;
+  color: #2a2a2a;
+}
+.list-fonction__icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 32px;
+  bottom: 0;
+  left: 32px;
+  color: #9356DC;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
 }
 
 .restaurants {
