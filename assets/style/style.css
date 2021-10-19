@@ -95,8 +95,23 @@ main {
   padding: 10px 40px;
 }
 
-.heart {
-  font-size: 2em;
+.hearts {
+  position: relative;
+  border: 1px solid transparent;
+  float: left;
+}
+.hearts__heart1 .hearts__heart2 {
+  font-size: 0.8em;
+  position: absolute;
+  left: 0;
+}
+
+.hearts a {
+  transition: opacity 2s ease-in-out;
+}
+
+.hearts a.heart2:hover {
+  opacity: 0;
 }
 
 .header {
@@ -252,9 +267,6 @@ main {
 .list-fonction__text:hover::after {
   opacity: 0.8;
 }
-.list-fonction__text:hover + .list-fonction__text:hover__icon::before {
-  opacity: 1;
-}
 .list-fonction__text::after {
   content: "";
   position: absolute;
@@ -263,6 +275,7 @@ main {
   bottom: 0;
   left: 32px;
   background: #f2eafb;
+  color: #9356DC;
   border-radius: 25px;
   opacity: 0;
   z-index: -1;
@@ -272,19 +285,6 @@ main {
   position: relative;
   margin: 0 0.5rem;
   z-index: 1;
-  color: #2a2a2a;
-}
-.list-fonction__icon::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 32px;
-  bottom: 0;
-  left: 32px;
-  color: #9356DC;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 250ms ease-in-out;
 }
 
 .restaurants {
@@ -295,16 +295,6 @@ main {
   .restaurants {
     padding: 2rem 1.5rem;
   }
-}
-
-.cards-box {
-  width: 100%;
-  height: auto;
-  border: 1px solid transparent;
-  border-radius: 20px;
-  background-color: #fff;
-  justify-self: center;
-  box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.13);
 }
 
 .cards {
@@ -320,6 +310,16 @@ main {
     grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
   }
+}
+
+.cards-box {
+  width: 100%;
+  height: auto;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: #fff;
+  justify-self: center;
+  box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.13);
 }
 
 .big-card {

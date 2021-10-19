@@ -1,3 +1,18 @@
-.heart {
-    font-size: 2em;
+.hearts {
+    position: relative;
+    @include border;
+    float: left;
+&__heart1 &__heart2 {
+    font-size: 0.8em;
+    position: absolute;
+    left: 0;
 }
+}
+
+.hearts a {
+    transition: opacity 2s ease-in-out;
+}
+
+.hearts a.heart2:hover {
+    opacity: 0;
+} 

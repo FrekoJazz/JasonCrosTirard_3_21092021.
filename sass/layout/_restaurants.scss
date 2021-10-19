@@ -6,15 +6,6 @@
     }
 }
 
-.cards-box{
-    width: 100%;
-    height: auto;
-    @include border;
-    border-radius: 20px;
-    @include background($white);
-    justify-self: center;
-    @include box-shadow;
-}
 .cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -26,6 +17,15 @@
         grid-template-rows: repeat(2, 1fr);
         gap: 2rem;
     }
+}
+.cards-box{
+    width: 100%;
+    height: auto;
+    @include border;
+    border-radius: 20px;
+    @include background($white);
+    justify-self: center;
+    @include box-shadow;
 }
 
 .big-card {
