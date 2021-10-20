@@ -1,18 +1,53 @@
-.hearts {
+.heart {
     position: relative;
-    @include border;
-    float: left;
-&__heart1 &__heart2 {
-    font-size: 0.8em;
-    position: absolute;
-    left: 0;
-}
+        &__full {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            background-image: linear-gradient(to right, $secondary, $primary);
+            -webkit-background-clip: text;
+            color: transparent;
+            transition: opacity 500ms ease-in-out;
+        }
 }
 
-.hearts a {
-    transition: opacity 2s ease-in-out;
+a:hover {
+    .heart__full {
+        opacity: 1;
+        //animation: to-fill 600ms;
+        //animation-fill-mode: both;
+        top: 2px;
+    }
 }
 
-.hearts a.heart2:hover {
-    opacity: 0;
-} 
+/*@keyframes to-fill {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: .19;
+
+    }
+
+    43% {
+        opacity: .48;
+
+    }
+
+    58%{
+        opacity: .65;
+
+    }
+
+    72%{
+        opacity: .86;
+
+    }
+    100% {
+        opacity: 1;
+    }
+}*/
