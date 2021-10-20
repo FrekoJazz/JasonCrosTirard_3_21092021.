@@ -18,6 +18,9 @@
         gap: 2rem;
     }
 }
+.container {
+    position: relative;
+}
 .cards-box{
     width: 100%;
     height: auto;
@@ -29,12 +32,6 @@
 }
 
 .big-card {
-    width: 100%;
-    height: auto;
-    @include border;
-    border-radius: 1rem 1rem 0 0;
-    @include background($white);
-    position: relative;
     &__img {
         width: 100%;
         height: auto;
@@ -43,26 +40,15 @@
         aspect-ratio: 6/3;
     }
     &__news {
-        position: relative;
-        left: 12rem;
-        bottom: 13rem;
-        padding: 0.5rem 1rem;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        padding: 0.3rem 0.8rem;
         border-radius: 0.1rem;
         @include background($tertiary);
         @include border;
-        @include colour-darken;
+        @include colour-darken; 
     }
-}
-.news::after {
-    content: "Nouveau";
-    position: relative;
-    left: 12rem;
-    bottom: 13rem;
-    padding: 0.5rem 1rem;
-    border-radius: 0.1rem;
-    @include background($tertiary);
-    @include border;
-    @include colour-darken;
 }
 
 .card-text {
@@ -70,7 +56,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1rem 0 1rem;
+    padding: 1rem;
     &__text {
         line-height: 1.5em;
     }

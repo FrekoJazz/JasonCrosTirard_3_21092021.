@@ -346,6 +346,10 @@ a:hover .heart__full {
   }
 }
 
+.container {
+  position: relative;
+}
+
 .cards-box {
   width: 100%;
   height: auto;
@@ -356,14 +360,6 @@ a:hover .heart__full {
   box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.13);
 }
 
-.big-card {
-  width: 100%;
-  height: auto;
-  border: 1px solid transparent;
-  border-radius: 1rem 1rem 0 0;
-  background-color: #fff;
-  position: relative;
-}
 .big-card__img {
   width: 100%;
   height: auto;
@@ -372,22 +368,10 @@ a:hover .heart__full {
   aspect-ratio: 6/3;
 }
 .big-card__news {
-  position: relative;
-  left: 12rem;
-  bottom: 13rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.1rem;
-  background-color: #99E2D0;
-  border: 1px solid transparent;
-  color: #278870;
-}
-
-.news::after {
-  content: "Nouveau";
-  position: relative;
-  left: 12rem;
-  bottom: 13rem;
-  padding: 0.5rem 1rem;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 0.3rem 0.8rem;
   border-radius: 0.1rem;
   background-color: #99E2D0;
   border: 1px solid transparent;
@@ -399,7 +383,7 @@ a:hover .heart__full {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem;
 }
 .card-text__text {
   line-height: 1.5em;
