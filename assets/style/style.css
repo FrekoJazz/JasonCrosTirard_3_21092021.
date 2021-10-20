@@ -108,42 +108,42 @@ main {
   background-image: linear-gradient(to right, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   color: transparent;
-  transition: opacity 500ms ease-in-out;
+}
+
+a:hover .heart__empty::before {
+  opacity: 0;
 }
 
 a:hover .heart__full {
   opacity: 1;
+  animation: to-fill 800ms;
+  animation-fill-mode: both;
   top: 2px;
 }
 
-/*@keyframes to-fill {
-    0% {
-        opacity: 0;
-    }
-
-    25% {
-        opacity: .19;
-
-    }
-
-    43% {
-        opacity: .48;
-
-    }
-
-    58%{
-        opacity: .65;
-
-    }
-
-    72%{
-        opacity: .86;
-
-    }
-    100% {
-        opacity: 1;
-    }
-}*/
+@keyframes to-fill {
+  0% {
+    opacity: 0;
+    transform: perspective(0px) translateZ(0px);
+  }
+  25% {
+    opacity: 0.19;
+  }
+  43% {
+    opacity: 0.48;
+    transform: perspective(30px) translateZ(5px);
+  }
+  58% {
+    opacity: 0.65;
+  }
+  72% {
+    opacity: 0.86;
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(0px) translateZ(0px);
+  }
+}
 .header {
   padding: 1rem;
   display: flex;
