@@ -16,6 +16,9 @@
     &__h1{
         font-family: Shirkhand;
     }
+    &__love {
+        font-size: 2rem;
+    }
 }
 
 .menu {
@@ -27,6 +30,9 @@
         font-size: 1rem;
         font-weight: lighter;
         margin: 1rem 0;
+        border-bottom: 3px solid $tertiary;
+        height: 1.5rem;
+        width: 10%;
     }
     @include large-only {
         display: grid;

@@ -201,6 +201,39 @@ a:hover .heart__full {
   }
 }
 
+.img-la-note {
+  width: 100%;
+  height: auto;
+  border: 1px solid transparent;
+}
+.img-la-note__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+  aspect-ratio: 4/3;
+}
+@media screen and (min-width: 768px) {
+  .img-la-note__img {
+    height: 36rem;
+    object-fit: cover;
+    object-position: unset;
+    aspect-ratio: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .img-la-note__img {
+    height: 35rem;
+    object-position: 0rem -24rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-width: 1440px) {
+  .img-la-note__img {
+    height: 35rem;
+    object-position: 0rem -45rem;
+  }
+}
+
 .location {
   display: flex;
   width: 100%;
@@ -411,6 +444,9 @@ a:hover .heart__full {
 .title-restaurant__h1 {
   font-family: Shirkhand;
 }
+.title-restaurant__love {
+  font-size: 2rem;
+}
 
 .menu {
   display: flex;
@@ -422,6 +458,9 @@ a:hover .heart__full {
   font-size: 1rem;
   font-weight: lighter;
   margin: 1rem 0;
+  border-bottom: 3px solid #99E2D0;
+  height: 1.5rem;
+  width: 10%;
 }
 @media screen and (min-width: 1024px) {
   .menu {
