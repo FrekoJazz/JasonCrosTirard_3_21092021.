@@ -52,6 +52,11 @@ main {
   gap: 1em;
 }
 
+.background-page {
+  gap: 1em;
+  background-color: #efefef;
+}
+
 .positions {
   position: relative;
   width: 100%;
