@@ -48,7 +48,6 @@
 
 .small-card {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
@@ -58,6 +57,39 @@
     @include background($white);
     @include box-shadow;
     padding: 0.5rem 1rem 0.5rem;
+    animation: apparition 800ms ease-out;
+    &__2 {
+        animation: apparition 1s ease-out 100ms;
+    }
+    &__3 {
+        animation: apparition 1.3s ease-out 100ms;
+    }
+    &__4 {
+        animation: apparition 1.3s ease-out 100ms;
+    }
+    @keyframes apparition {
+        0% {
+            opacity: 0;
+            transform: translateY(25px);
+        }
+        20% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0.3;
+        }
+        60% {
+            opacity: 0.6;
+        }
+        80% {
+            opacity: 0.8;
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
 }
 
 .bouton-menu {

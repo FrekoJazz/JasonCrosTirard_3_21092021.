@@ -112,6 +112,7 @@ main {
   opacity: 0;
   background-image: linear-gradient(to right, #FF79DA, #9356DC);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
@@ -208,7 +209,6 @@ a:hover .heart__full {
 
 .img-la-note {
   width: 100%;
-  height: auto;
   border: 1px solid transparent;
 }
 .img-la-note__img {
@@ -482,7 +482,6 @@ a:hover .heart__full {
 
 .small-card {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
@@ -492,6 +491,38 @@ a:hover .heart__full {
   background-color: #fff;
   box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.13);
   padding: 0.5rem 1rem 0.5rem;
+  animation: apparition 800ms ease-out;
+}
+.small-card__2 {
+  animation: apparition 1s ease-out 100ms;
+}
+.small-card__3 {
+  animation: apparition 1.3s ease-out 100ms;
+}
+.small-card__4 {
+  animation: apparition 1.3s ease-out 100ms;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .bouton-menu {
