@@ -423,6 +423,9 @@ a:hover .heart__full {
   align-items: center;
   padding: 1rem;
 }
+.card-text__enchantee {
+  padding: 1.2rem;
+}
 .card-text__text {
   line-height: 1.5em;
 }
