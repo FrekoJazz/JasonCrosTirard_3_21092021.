@@ -489,11 +489,10 @@ a:hover .heart__full {
   align-items: flex-end;
   width: 100%;
   height: auto;
-  border: 1px solid transparent;
   border-radius: 1rem;
   background-color: #fff;
   box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.13);
-  padding: 0.5rem 1rem 0.5rem;
+  padding: 0 0 0 0.5rem;
   animation: apparition 800ms ease;
 }
 .small-card__2 {
@@ -529,27 +528,32 @@ a:hover .heart__full {
 }
 
 .box-small-card {
-  position: relative;
+  display: grid;
+  grid-template-columns: 10fr 2fr 2fr;
   width: 100%;
+}
+.box-small-card__text {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
-  /*overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 0.2rem;
+  overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;*/
+  text-overflow: ellipsis;
+}
+.box-small-card__price {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 1rem 0;
 }
 
 .box-green {
-  position: absolute;
-  display: flex;
-  width: 20%;
+  display: inline-block;
+  width: 100%;
   padding: 1.1rem;
   border: 1px solid transparent;
   background-color: #99E2D0;
   border-radius: 0 1rem 1rem 0;
-  right: -100px;
-  justify-content: center;
 }
 .box-green__circle {
   background-color: #99E2D0;

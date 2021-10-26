@@ -52,11 +52,10 @@
     align-items: flex-end;
     width: 100%;
     height: auto;
-    @include border;
     border-radius: 1rem;
     @include background($white);
     @include box-shadow;
-    padding: 0.5rem 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
     animation: apparition 800ms ease;
     &__2 {
         animation: apparition 1s ease 100ms;
@@ -93,27 +92,32 @@
 }
 
 .box-small-card {
-    position: relative;
+    display: grid;
+    grid-template-columns: 10fr 2fr 2fr;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3rem;
-    /*overflow: hidden;
+    &__text {
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 0.2rem;
+    overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;*/
+    text-overflow: ellipsis;
+    }
+    &__price {
+        display: flex;
+    align-items: flex-end;
+    padding: 0 0 1rem 0;
+    }
 }
 
 .box-green {
-    position: absolute;
-    display: flex;
-    width: 20%;
+    display: inline-block;
+    width: 100%;
     padding: 1.1rem;
     border: 1px solid transparent;
     background-color: #99E2D0;
     border-radius: 0 1rem 1rem 0;
-    right: -100px;
-    justify-content: center;
     &__circle {
         @include background($tertiary);
         color: white;
