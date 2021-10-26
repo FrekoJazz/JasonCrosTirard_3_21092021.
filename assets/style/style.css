@@ -560,6 +560,16 @@ a:hover .heart__full {
   color: white;
   font-size: 1.5rem;
 }
+@media screen and (min-width: 768px) {
+  .box-green__circle {
+    margin: 0 1.3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .box-green__circle {
+    margin: unset;
+  }
+}
 
 .bouton-menu {
   display: flex;
