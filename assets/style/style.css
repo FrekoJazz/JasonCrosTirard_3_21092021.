@@ -50,6 +50,7 @@ body {
 
 main {
   gap: 1em;
+  animation: opaque 3s ease-in-out;
 }
 
 .load {
