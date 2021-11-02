@@ -36,11 +36,11 @@ html {
 
 @font-face {
   font-family: Roboto;
-  src: url(/assets/font/Roboto/Roboto-Medium.ttf);
+  src: url(./assets/font/Roboto/Roboto-Medium.ttf);
 }
 @font-face {
   font-family: Shirkhand;
-  src: url(/assets/font/Shrikhand/Shrikhand-Regular.ttf);
+  src: url(./assets/font/Shrikhand/Shrikhand-Regular.ttf);
 }
 body {
   font-family: Roboto;
@@ -50,7 +50,6 @@ body {
 
 main {
   gap: 1em;
-  animation: opaque 3s ease-in-out;
 }
 
 .load {
@@ -89,6 +88,7 @@ main {
   box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.13);
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 .btn:hover::after {
   opacity: 0.8;
@@ -183,7 +183,7 @@ a:hover .heart__full {
 .loading {
   position: absolute;
   z-index: 3;
-  margin: 45vh;
+  margin: 55vh;
   border-radius: 50%;
   border: 6px solid transparent;
   border-top: 6px solid #9356DC;
@@ -593,20 +593,22 @@ a:hover .heart__full {
   background-color: #fff;
   box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.13);
   padding: 0 0 0 0.5rem;
-  animation: apparition 800ms ease;
+}
+.small-card__1 {
+  animation: apparition 1s cubic-bezier(0.28, 0.09, 0.26, 1) 150ms;
+}
+.small-card__2 {
+  animation: apparition 1s cubic-bezier(0.28, 0.09, 0.26, 1) 300ms;
+}
+.small-card__3 {
+  animation: apparition 1s cubic-bezier(0.28, 0.09, 0.26, 1) 450ms;
+}
+.small-card__4 {
+  animation: apparition 1s cubic-bezier(0.28, 0.09, 0.26, 1) 600ms;
 }
 .small-card__price {
   padding: 0 0 1rem 0;
   margin-right: 1rem;
-}
-.small-card__2 {
-  animation: apparition 1s ease 100ms;
-}
-.small-card__3 {
-  animation: apparition 1.3s ease 100ms;
-}
-.small-card__4 {
-  animation: apparition 1.3s ease 100ms;
 }
 @keyframes apparition {
   0% {
@@ -636,13 +638,10 @@ a:hover .heart__full {
   grid-template-columns: 10fr 2fr;
   width: 100%;
   cursor: pointer;
+  overflow: hidden;
 }
 .box-small-card:hover .box-small-card__price {
   transform: translateX(0px);
-}
-.box-small-card:hover .box-small-card__box-green {
-  opacity: 1;
-  transition-duration: 100ms;
 }
 .box-small-card:hover .box-small-card__circle {
   transform: rotate(0turn);
@@ -672,13 +671,13 @@ a:hover .heart__full {
   border: 1px solid transparent;
   background-color: #99E2D0;
   border-radius: 0 1rem 1rem 0;
-  opacity: 0;
+  overflow: hidden;
 }
 .box-small-card__circle {
   background-color: #99E2D0;
   color: white;
   font-size: 1.5rem;
-  margin-top: 0.3rem;
+  margin-top: auto;
   margin-bottom: auto;
   transform: rotate(-1turn);
   transition: transform 350ms ease-in-out;
