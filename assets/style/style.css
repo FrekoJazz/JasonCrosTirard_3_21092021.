@@ -35,11 +35,11 @@ html {
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: "Roboto";
   src: url("/assets/font/Roboto/Roboto-Medium.ttf");
 }
 @font-face {
-  font-family: Shirkhand;
+  font-family: "Shirkhand";
   src: url("/assets/font/Shrikhand/Shrikhand-Regular.ttf");
 }
 body {
@@ -251,11 +251,14 @@ a:hover .heart__full {
   }
 }
 .header {
-  padding: 1rem;
+  padding: 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #f7f7f7;
+}
+.header__arrow {
+  font-size: 1.5rem;
 }
 .header__logo {
   max-width: 50%;
