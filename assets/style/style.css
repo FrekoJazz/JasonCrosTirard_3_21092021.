@@ -36,11 +36,11 @@ html {
 
 @font-face {
   font-family: Roboto;
-  src: url(./assets/font/Roboto/Roboto-Medium.ttf);
+  src: url("/assets/font/Roboto/Roboto-Medium.ttf");
 }
 @font-face {
   font-family: Shirkhand;
-  src: url(./assets/font/Shrikhand/Shrikhand-Regular.ttf);
+  src: url("/assets/font/Shrikhand/Shrikhand-Regular.ttf");
 }
 body {
   font-family: Roboto;
