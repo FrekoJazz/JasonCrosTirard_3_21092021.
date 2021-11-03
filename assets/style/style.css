@@ -1,9 +1,3 @@
-@font-face {
-  font-family: "Roboto-medium";
-  src: url(/assets/font/Roboto/Roboto-Medium.ttf);
-  font-family: "Shrikhand";
-  src: url(/assets/font/Shrikhand/Shrikhand-Regular.ttf);
-}
 * {
   margin: 0;
   padding: 0;
@@ -608,6 +602,16 @@ a:hover .heart__full {
 }
 .small-card__4 {
   animation: apparition 1s cubic-bezier(0.28, 0.09, 0.26, 1) 600ms;
+}
+.small-card__title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.small-card__text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .small-card__price {
   padding: 0 0.3rem 1rem 0;
