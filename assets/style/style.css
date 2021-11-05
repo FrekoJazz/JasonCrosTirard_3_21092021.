@@ -629,8 +629,7 @@ a:hover .heart__full {
 }
 
 .box-small-card {
-  display: grid;
-  grid-template-columns: 10fr 2fr;
+  display: flex;
   width: 100%;
   cursor: pointer;
   overflow: hidden;
@@ -642,9 +641,11 @@ a:hover .heart__full {
   transform: rotate(0turn);
 }
 .box-small-card__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /*display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "small-card__title"    "."
+                        "small-card__text"    "small-card__price";*/
   padding: 0 0 0 0.2rem;
   line-height: 1.8rem;
   margin: 0.5rem 0;

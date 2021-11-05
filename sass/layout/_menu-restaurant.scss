@@ -66,16 +66,19 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        //grid-column: span 2;
     }
     &__text {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+
     }
 
     &__price {
         padding: 0 0.3rem 1rem 0;
         margin-right: 1rem;
+
     }
     
     @keyframes apparition {
@@ -93,8 +96,7 @@
 }
 
 .box-small-card {
-    display: grid;
-    grid-template-columns: 10fr 2fr;
+    display: flex;
     width: 100%;
     cursor: pointer;
     overflow: hidden;
@@ -110,9 +112,11 @@
     }
 
     &__text {
-        display: flex;
-    flex-direction: column;
-    justify-content: center;
+        /*display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "small-card__title"    "."
+                              "small-card__text"    "small-card__price";*/
     padding: 0 0 0 0.2rem;
     line-height: 1.8rem;
     margin: 0.5rem 0;
