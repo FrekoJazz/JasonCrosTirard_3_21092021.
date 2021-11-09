@@ -66,19 +66,16 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        //grid-column: span 2;
     }
     &__text {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-
     }
 
     &__price {
-        padding: 0 0.3rem 1rem 0;
+        padding: 0 0 1rem;
         margin-right: 1rem;
-
     }
     
     @keyframes apparition {
@@ -96,13 +93,12 @@
 }
 
 .box-small-card {
-    display: flex;
     width: 100%;
     cursor: pointer;
     overflow: hidden;
     &:hover {
-        & .box-small-card__price {
-            transform: translateX(0px);
+        & .box-small-card__paragraphe {
+            width: 60%;
         }
     }
     &:hover {
@@ -111,34 +107,36 @@
         }
     }
 
-    &__text {
-        /*display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "small-card__title"    "."
-                              "small-card__text"    "small-card__price";*/
-    padding: 0 0 0 0.2rem;
-    line-height: 1.8rem;
-    margin: 0.5rem 0;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    &__paragraphe {
+        width: 80%;
+        display: flex;
+        flex: 1 1;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 0 0 0.2rem;
+        line-height: 1.8rem;
+        margin: 0.5rem 0;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        transition: transform 350ms ease-in-out;
+
     }
     &__price {
+        width: 20%;
         display: flex;
         align-items: flex-end;
         transform: translateX(72px);
         transition: transform 350ms ease-in-out;
     }
     &__box-green {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
+        width: 40%;
         padding: 1.4rem;
         border: 1px solid transparent;
         background-color: #99E2D0;
         border-radius: 0 1rem 1rem 0;
-        overflow: hidden;
+        margin-right: -5rem;
+        transition: transform 350ms ease-in-out;
     }
         &__circle {
             @include background($tertiary);
