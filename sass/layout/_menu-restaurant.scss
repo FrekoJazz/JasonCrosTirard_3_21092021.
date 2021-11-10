@@ -102,13 +102,18 @@
         }
     }
     &:hover {
+        & .box-small-card__box-green {
+            width: 40%;
+        }
+    }
+    &:hover {
         & .box-small-card__circle {
             transform: rotate(0turn);
         }
     }
 
     &__paragraphe {
-        width: 80%;
+        width: 78%;
         display: flex;
         flex: 1 1;
         flex-direction: column;
@@ -123,14 +128,14 @@
 
     }
     &__price {
-        width: 20%;
+        width: 27%;
         display: flex;
         align-items: flex-end;
         transform: translateX(72px);
         transition: transform 350ms ease-in-out;
     }
     &__box-green {
-        width: 40%;
+        width: 20%;
         padding: 1.4rem;
         border: 1px solid transparent;
         background-color: #99E2D0;
