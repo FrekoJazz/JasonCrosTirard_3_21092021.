@@ -102,8 +102,14 @@
         }
     }
     &:hover {
+        & .box-small-card__price {
+            transform: translateX(0px);
+            width: 10%;
+        }
+    }
+    &:hover {
         & .box-small-card__box-green {
-            width: 40%;
+            margin-right: 0rem;
         }
     }
     &:hover {
@@ -115,7 +121,6 @@
     &__paragraphe {
         width: 78%;
         display: flex;
-        flex: 1 1;
         flex-direction: column;
         justify-content: center;
         padding: 0 0 0 0.2rem;
@@ -128,15 +133,17 @@
 
     }
     &__price {
-        width: 27%;
+        width: 22%;
         display: flex;
         align-items: flex-end;
-        transform: translateX(72px);
+        transform: translateX(45px);
         transition: transform 350ms ease-in-out;
     }
     &__box-green {
+        display: flex;
+        justify-content: center;
         width: 20%;
-        padding: 1.4rem;
+        padding: 1.4rem 0rem;
         border: 1px solid transparent;
         background-color: #99E2D0;
         border-radius: 0 1rem 1rem 0;
