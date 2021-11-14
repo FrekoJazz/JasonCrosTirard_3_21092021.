@@ -278,7 +278,7 @@ a:hover .heart__full {
     height: 36rem;
     object-fit: cover;
     object-position: unset;
-    aspect-ratio: 0;
+    aspect-ratio: unset;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -320,7 +320,7 @@ a:hover .heart__full {
     height: 36rem;
     object-fit: cover;
     object-position: unset;
-    aspect-ratio: 0;
+    aspect-ratio: unset;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -667,7 +667,7 @@ a:hover .heart__full {
   border: 1px solid transparent;
   background-color: #99E2D0;
   border-radius: 0 1rem 1rem 0;
-  transition: width 0.5s ease-in-out;
+  transition: width 0.4s ease-in-out;
 }
 .box-small-card__check {
   margin-left: 0.8rem;
@@ -734,8 +734,8 @@ h4 {
   }
 }
 
-#footerblock__liens {
-  color: #fff;
+#footerblock__liens1, #footerblock__liens2, #footerblock__liens3, #footerblock__liens4 {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

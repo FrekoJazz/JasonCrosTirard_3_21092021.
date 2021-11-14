@@ -12,7 +12,7 @@
             height: 36rem;
             object-fit: cover;
             object-position: unset;
-            aspect-ratio: 0;
+            aspect-ratio: unset;
         }
         @include large-only {
             height: 35rem;
@@ -44,7 +44,7 @@
             height: 36rem;
             object-fit: cover;
             object-position: unset;
-            aspect-ratio: 0;
+            aspect-ratio: unset;
         }
         @include large-only {
             height: 35rem;
