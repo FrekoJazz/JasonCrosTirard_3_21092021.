@@ -5,7 +5,7 @@
     border-radius: 30px;
     font: 500 0.9rem "Roboto";
     height: 50px;
-    box-shadow: 3px 5px 12px rgb(0 0 0 / 13%);
+    box-shadow: 3px 5px 12px rgba(0, 0, 0, 13%);
     position: relative;
     z-index: 1;
     cursor: pointer;
@@ -22,7 +22,7 @@
         bottom: 0;
         left: 0;
         background: linear-gradient(lighten($secondary,3),lighten($primary,3));
-        box-shadow: 3px 5px 12px rgb(0 0 0 / 30%);
+        box-shadow: 3px 5px 12px rgba(0, 0, 0, 30%);
         border-radius: 30px;
         opacity: 0;
         z-index: -1;
@@ -37,6 +37,3 @@
 .btn-commander {
     padding: 10px 40px;
 }
-
-
-//Aniimations a retravailler avec keyframe pour avoir un effet "smooth"

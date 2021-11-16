@@ -36,7 +36,9 @@
     }
     @include large-only {
         display: grid;
+        //justify-content: center;
         grid-template-columns: repeat(3,1fr);
+        //grid-template-columns: repeat(3,33%);
     }
 }
 
@@ -100,8 +102,7 @@
 
     &:hover {
         & .box-small-card__box-green {
-            width:35%;
-            
+            width:35%;   
         }
     }
     &:hover {
