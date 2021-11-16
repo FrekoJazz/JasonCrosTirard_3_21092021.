@@ -36,9 +36,9 @@
     }
     @include large-only {
         display: grid;
-        //justify-content: center;
+        justify-content: center;
         grid-template-columns: repeat(3,1fr);
-        //grid-template-columns: repeat(3,33%);
+        grid-template-columns: repeat(3,33%);
     }
 }
 
@@ -68,11 +68,13 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        font-size: 0.9rem;
     }
     &__text {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        font-size: 0.9rem;
     }
 
     &__price {
@@ -110,6 +112,20 @@
             transform: rotate(0turn);
         }
     }
+    @include large-only {
+        &:hover {
+            & .box-small-card__box-green {
+                width:50%;   
+            }
+    }
+    @include huge-only {
+        &:hover {
+            & .box-small-card__box-green {
+                width:35%;   
+            }
+    }
+    }
+    }
 
     &__paragraphe {
         width: 78%;
@@ -142,7 +158,14 @@
         transition: width 0.4s ease-in-out;
     }
     &__check {
-        margin-left: 0.8rem
+        margin-left: 0.5rem;
+
+        @include large-only {
+            margin-left: 0.9rem;
+        }
+        @include huge-only {
+            margin-left: 1rem;
+        }
     }
         &__circle {
             @include background($tertiary);
@@ -152,7 +175,7 @@
             transition: transform 350ms ease-in-out 0.2s;
         
             @include medium-only {
-                margin: 0 1.6rem;
+                margin: 0 3rem;
             }
             @include large-only {
                 margin: unset;

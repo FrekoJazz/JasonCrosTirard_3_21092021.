@@ -570,7 +570,9 @@ a:hover .heart__full {
 @media screen and (min-width: 1024px) {
   .menu {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 33%);
   }
 }
 
@@ -607,11 +609,13 @@ a:hover .heart__full {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-size: 0.9rem;
 }
 .small-card__text {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-size: 0.9rem;
 }
 .small-card__price {
   padding: 0 0 1rem;
@@ -639,6 +643,16 @@ a:hover .heart__full {
 }
 .box-small-card:hover .box-small-card__circle {
   transform: rotate(0turn);
+}
+@media screen and (min-width: 1024px) {
+  .box-small-card:hover .box-small-card__box-green {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) and (min-width: 1440px) {
+  .box-small-card:hover .box-small-card__box-green {
+    width: 35%;
+  }
 }
 .box-small-card__paragraphe {
   width: 78%;
@@ -670,7 +684,17 @@ a:hover .heart__full {
   transition: width 0.4s ease-in-out;
 }
 .box-small-card__check {
-  margin-left: 0.8rem;
+  margin-left: 0.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .box-small-card__check {
+    margin-left: 0.9rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .box-small-card__check {
+    margin-left: 1rem;
+  }
 }
 .box-small-card__circle {
   background-color: #99E2D0;
@@ -681,7 +705,7 @@ a:hover .heart__full {
 }
 @media screen and (min-width: 768px) {
   .box-small-card__circle {
-    margin: 0 1.6rem;
+    margin: 0 3rem;
   }
 }
 @media screen and (min-width: 1024px) {
