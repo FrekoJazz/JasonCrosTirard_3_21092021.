@@ -73,7 +73,7 @@ main {
 }
 
 .btn {
-  border: 1px solid transparent;
+  border: 0;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 30px;
@@ -264,7 +264,7 @@ a:hover .heart__full {
 .img-restaurant {
   width: 100%;
   height: auto;
-  border: 1px solid transparent;
+  border: 0px;
 }
 .img-restaurant__img {
   width: 100%;
@@ -306,7 +306,7 @@ a:hover .heart__full {
 
 .img-la-note {
   width: 100%;
-  border: 1px solid transparent;
+  border: 0px;
 }
 .img-la-note__img {
   width: 100%;
@@ -408,9 +408,9 @@ a:hover .heart__full {
 .list-fonction__number {
   width: auto;
   height: auto;
-  border: 1px solid transparent;
-  border-radius: 20px;
-  padding: 5px 8px;
+  border: 0px;
+  border-radius: 50%;
+  padding: 5px 10px;
   background-color: #9356DC;
   color: #fff;
   position: relative;
@@ -420,7 +420,7 @@ a:hover .heart__full {
   width: 100%;
   height: auto;
   display: inline-block;
-  border: 1px solid transparent;
+  border: 0px;
   background-color: rgba(211, 211, 211, 0.2);
   border-radius: 25px;
   padding: 25px 0;
@@ -488,7 +488,7 @@ a:hover .heart__full {
 .cards-box {
   width: 100%;
   height: auto;
-  border: 1px solid transparent;
+  border: 0px;
   border-radius: 20px;
   background-color: #fff;
   justify-self: center;
@@ -509,7 +509,7 @@ a:hover .heart__full {
   padding: 0.3rem 0.8rem;
   border-radius: 0.1rem;
   background-color: #99E2D0;
-  border: 1px solid transparent;
+  border: 0px;
   color: #278870;
 }
 
@@ -609,13 +609,31 @@ a:hover .heart__full {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 0.9rem;
+}
+@media screen and (min-width: 1024px) {
+  .small-card__title {
+    font-size: 0.98rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .small-card__title {
+    font-size: 1.3rem;
+  }
 }
 .small-card__text {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 0.9rem;
+}
+@media screen and (min-width: 1024px) {
+  .small-card__text {
+    font-size: 0.85em;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .small-card__text {
+    font-size: 1.1rem;
+  }
 }
 .small-card__price {
   padding: 0 0 1rem;
@@ -725,7 +743,7 @@ a:hover .heart__full {
 .footer {
   width: 100%;
   height: auto;
-  border: 1px solid transparent;
+  border: 0px;
   padding: 1rem 2rem;
   background-color: rgba(0, 0, 0, 0.8);
 }

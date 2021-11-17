@@ -68,13 +68,25 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        font-size: 0.9rem;
+    
+        @include large-only {
+            font-size: 0.98rem;
+        }
+        @include huge-only {
+            font-size: 1.3rem;
+        }
     }
     &__text {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        font-size: 0.9rem;
+
+        @include large-only {
+            font-size: 0.85em;
+        }
+        @include huge-only {
+            font-size: 1.1rem;
+        }
     }
 
     &__price {

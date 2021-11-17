@@ -39,7 +39,7 @@ $breakpoints: (
   }
 
   @mixin border {
-    border: 1px solid transparent;
+    border: 0px;
   }
 
   @mixin box-shadow {
@@ -50,8 +50,8 @@ $breakpoints: (
     width: auto;
     height: auto;
     @include border;
-    border-radius: 20px;
-    padding: 5px 8px;
+    border-radius: 50%;
+    padding: 5px 10px;
     background-color: $primary;
     color: #fff;
     position: relative;
