@@ -1,0 +1,70 @@
+.restaurants {
+    @include background;
+    padding: 3rem 1.5rem;
+    @include large-only {
+    padding: 2rem 1.5rem;
+    }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    margin: 1.5rem 0;
+    gap: 1rem; 
+    @include large-only {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+.container {
+    position: relative;
+}
+.cards-box{
+    width: 100%;
+    height: auto;
+    @include border;
+    border-radius: 20px;
+    @include background($white);
+    justify-self: center;
+    @include box-shadow;
+}
+
+.big-card {
+    &__img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+        aspect-ratio: 6/3;
+    }
+    &__news {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        padding: 0.3rem 0.8rem;
+        border-radius: 0.1rem;
+        @include background($tertiary);
+        @include border;
+        @include colour-darken; 
+    }
+}
+
+.card-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    &__enchantee {
+        padding: 1.2rem;
+    }
+    &__text {
+        line-height: 1.5em;
+    }
+    &__icon {
+        font-size: 2em;
+    }
+}
+

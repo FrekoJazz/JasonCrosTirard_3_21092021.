@@ -1,0 +1,75 @@
+.list {
+    padding: 3rem 0;
+    @include large-only {
+    padding: 2rem 0 3rem;
+    }
+    @include background-secondary;
+    &__title {
+        margin-left: 1.5rem;
+    }
+}
+
+.grid-fonction {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 1.5rem 0;
+    gap: 2rem;
+    @include large-only {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        margin: 1.5rem 0 0;
+    }
+}
+
+.list-fonction {
+    display: flex;
+    align-items: center;
+    position: relative; 
+    &__number {
+        @include list-fonction__number;
+        right: 1rem;
+    }
+    &__text {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        @include border;
+        background-color: rgba(211, 211, 211, 0.2);
+        border-radius: 25px;
+        padding: 25px 0;
+        margin: 0 2rem;
+        gap: 1rem;
+        @include box-shadow;
+        z-index: 1;
+        &:hover {
+            &::after {
+                opacity: 0.8;
+            }
+            & > .list-fonction__icon {
+                color: $primary;
+
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 32px;
+            bottom: 0;
+            left: 32px;
+            background: lighten($primary,35);
+            color: $primary;
+            border-radius: 25px;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 250ms ease-in-out;
+        }
+    }
+   &__icon {
+        position: relative;
+        margin: 0 0.5rem;
+        z-index: 1;
+        transition: color 250ms ease-in-out;
+   }
+}

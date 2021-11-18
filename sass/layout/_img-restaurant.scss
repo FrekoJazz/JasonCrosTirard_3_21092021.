@@ -1,0 +1,58 @@
+.img-restaurant {
+    width: 100%;
+    height: auto;
+    @include border;
+    &__img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: top;
+        aspect-ratio: 4/3;
+        @include medium-only {
+            height: 36rem;
+            object-fit: cover;
+            object-position: unset;
+            aspect-ratio: unset;
+        }
+        @include large-only {
+            height: 35rem;
+            object-position: 0rem -6rem;
+            @include huge-only {
+                height: 35rem;
+                object-position: 0rem -22rem;
+            }
+        }
+    }
+    @include medium-only {
+        height: 35rem;
+    }
+    @include large-only {
+        height: 35rem;
+    }
+}
+
+.img-la-note {
+    width: 100%;
+    @include border;
+    &__img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: top;
+        aspect-ratio: 4/3;
+        @include medium-only {
+            height: 36rem;
+            object-fit: cover;
+            object-position: unset;
+            aspect-ratio: unset;
+        }
+        @include large-only {
+            height: 35rem;
+            object-position: 0rem -24rem;
+            @include huge-only {
+                height: 35rem;
+                object-position: 0rem -45rem;
+            }
+        }
+    }
+}

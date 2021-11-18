@@ -1,0 +1,89 @@
+//Responsive breakpoint
+$breakpoints: (
+  small: 425px,
+  medium: 768px,
+  large: 1024px,
+  huge: 1440px
+);
+
+@mixin medium-only {
+  @media screen and (min-width:map-get($breakpoints, medium)) {
+    @content;
+  }
+}
+
+
+@mixin large-only {
+  @media screen and (min-width:map-get($breakpoints, large)) {
+    @content;
+  }
+}
+
+@mixin huge-only {
+  @media screen and (min-width:map-get($breakpoints, huge)) {
+    @content;
+  }
+}
+
+//couleur et mixin
+
+  $darkgrey: rgba(80, 80, 80, 0.13);
+  $light-grey: rgba(239, 239, 239, 1);
+  $primary: #9356DC;
+  $secondary: #FF79DA;
+  $tertiary: #99E2D0;
+  $white: #fff;
+
+  @mixin background($colour: $light-grey) {
+    background-color: $colour;
+  }
+
+  @mixin border {
+    border: 0px;
+  }
+
+  @mixin box-shadow {
+    box-shadow: 3px 5px 12px rgba(0, 0, 0, 13%);
+  }
+
+  @mixin list-fonction__number {
+    width: auto;
+    height: auto;
+    @include border;
+    border-radius: 50%;
+    padding: 5px 10px;
+    background-color: $primary;
+    color: #fff;
+    position: relative;
+  }
+
+
+  @mixin colour-darken($colour:$tertiary) {
+    color: darken($colour,40%);
+  }
+
+  @function lightness-shift($colour){
+     @if ( lightness($colour) < 95% ) {
+      @return lighten($colour, 3%);
+    }
+    @else{
+      @return darken($colour, 6%);
+    }
+  }
+
+@mixin background-secondary($colour: lightness-shift($light-grey)) {
+  background-color: $colour;
+}
+
+@function darken-shift($colour){
+  @if ( lightness($colour) < 93% ) {
+   @return lighten($colour, 2%);
+ }
+ @else{
+   @return darken($colour, 4%);
+ }
+}
+
+@mixin background-tertiary($colour: darken-shift($light-grey)) {
+background-color: $colour;
+}

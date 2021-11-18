@@ -1,0 +1,62 @@
+.heart {
+    position: relative;
+        &__full {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            background-image: linear-gradient(to right, $secondary, $primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+}
+
+a:hover {
+    .heart__empty::before {
+        opacity: 0;
+    }
+}
+
+a:hover {
+    .heart__full {
+        opacity: 1;
+        animation: to-fill 800ms;
+        animation-fill-mode: both;
+        top: 2px;
+    }
+}
+
+@keyframes to-fill {
+    0% {
+        opacity: 0;
+        transform: perspective(0px) translateZ(0px);
+    }
+
+    25% {
+        opacity: .19;
+
+    }
+
+    43% {
+        opacity: .48;
+        transform: perspective(30px) translateZ(5px);
+    }
+
+    58%{
+        opacity: .65;
+
+    }
+
+    72%{
+        opacity: .86;
+        
+    }
+    100% {
+        opacity: 1;
+        
+        transform: perspective(0px) translateZ(0px)
+    }
+}
