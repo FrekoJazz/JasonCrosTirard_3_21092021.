@@ -14,7 +14,7 @@
     justify-content: space-between;
     margin: 0 1.5rem 0 1rem;
     &__h1{
-        font-family: Shirkhand;
+        font-family: "Shirkhand";
     }
     &__love {
         font-size: 2rem;
@@ -125,20 +125,6 @@
             transform: rotate(0turn);
         }
     }
-    @include large-only {
-        &:hover {
-            & .box-small-card__box-green {
-                width:50%;   
-            }
-    }
-    @include huge-only {
-        &:hover {
-            & .box-small-card__box-green {
-                width:35%;   
-            }
-    }
-    }
-    }
 
     &__paragraphe {
         width: 78%;
@@ -174,13 +160,14 @@
         border: 1px solid transparent;
         background-color: #99E2D0;
         border-radius: 0 1rem 1rem 0;
-        transition: margin-right 0.5s ease-in-out;
+        transition: margin-right 0.4s ease-in-out;
 
         @include medium-only {
             margin-right: -12rem;
         }
         @include large-only {
             margin-right: -7rem;
+            width: 30%;
         }
         @include huge-only {
             margin-right: -9rem;
