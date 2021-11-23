@@ -6,6 +6,12 @@ $breakpoints: (
   huge: 1440px
 );
 
+@mixin small-only {
+  @media screen and (min-width:map-get($breakpoints, small)) {
+    @content;
+  }
+}
+
 @mixin medium-only {
   @media screen and (min-width:map-get($breakpoints, medium)) {
     @content;
